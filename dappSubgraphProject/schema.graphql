@@ -1,0 +1,9 @@
+type RecordCreated @entity(immutable: true) {
+  id: Bytes!
+  SimpleRecord_id: BigInt! # uint256
+  data: String! # string
+  creator: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
